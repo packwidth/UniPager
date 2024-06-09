@@ -176,7 +176,7 @@ pub fn start(runtime: &Runtime, pass: Option<String>, event_handler: EventHandle
     });
 
     runtime.spawn(async move {
-        let mut socket = TcpListener::bind(&addr).await.unwrap();
+        let socket = TcpListener::bind(&addr).await.unwrap();
 
         while let Ok ((stream, _)) = socket.accept().await {
             tokio::spawn(

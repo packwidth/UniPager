@@ -1,4 +1,3 @@
-use std::ffi::CString;
 
 use raspi::{Direction, Gpio, Model, Pin};
 use serial;

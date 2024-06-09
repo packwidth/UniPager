@@ -1,6 +1,5 @@
 use std::net::SocketAddr;
 
-use bytes::buf::Buf;
 
 use serde_json;
 use tokio::runtime::Runtime;

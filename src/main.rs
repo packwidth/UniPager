@@ -63,7 +63,7 @@ fn main() {
         .map_err(|_| eprintln!("Failed to load password file."))
         .ok();
 
-    let mut runtime = Runtime::new().unwrap();
+    let runtime = Runtime::new().unwrap();
 
     let config = config::get();
     let event_handler = event::start(&runtime);
